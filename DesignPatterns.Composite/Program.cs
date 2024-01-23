@@ -4,25 +4,18 @@
     {
         static void Main(string[] args)
         {
-            Client client = new Client();
+            Forma circulo = new Forma("Círculo");
+            Forma cuadrado = new Forma("Cuadrado");
 
-            Leaf leaf = new Leaf();
-            Console.WriteLine("Client: I get a simple component:");
-            client.ClientCode(leaf);
+            CompositeGrafico grafico = new CompositeGrafico();
+            grafico.Agregar(circulo);
+            grafico.Agregar(cuadrado);
 
-            Composite tree = new Composite();
-            Composite branch1 = new Composite();
-            branch1.Add(new Leaf());
-            branch1.Add(new Leaf());
-            Composite branch2 = new Composite();
-            branch2.Add(new Leaf());
-            tree.Add(branch1);
-            tree.Add(branch2);
-            Console.WriteLine("Client: Now I've got a composite tree:");
-            client.ClientCode(tree);
+            CompositeGrafico graficoCompuesto = new CompositeGrafico();
+            graficoCompuesto.Agregar(grafico);
+            graficoCompuesto.Agregar(new Forma("Triángulo"));
 
-            Console.Write("Client: I don't need to check the components classes even when managing the tree:\n");
-            client.ClientCode2(tree, leaf);
+            graficoCompuesto.Dibujar();  // Dibuja el círculo, el cuadrado y el triángulo
         }
     }
 }

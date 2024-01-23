@@ -5,15 +5,19 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Composite", "DesignPatterns.Composite\DesignPatterns.Composite.csproj", "{36B6DED3-2748-4C2C-AC84-A491F32F3983}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Singleton", "DesignPatterns.Singleton\DesignPatterns.Singleton.csproj", "{BAB78AD7-DB8D-402D-B0F1-FC8A27753256}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Singleton", "DesignPatterns.Singleton\DesignPatterns.Singleton.csproj", "{BAB78AD7-DB8D-402D-B0F1-FC8A27753256}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Builder", "DesignPatterns.Builder\DesignPatterns.Builder.csproj", "{16E7430A-1851-4AB5-8FAC-5B493C34D775}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Builder", "DesignPatterns.Builder\DesignPatterns.Builder.csproj", "{16E7430A-1851-4AB5-8FAC-5B493C34D775}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Adapter", "DesignPatterns.Adapter\DesignPatterns.Adapter.csproj", "{329BC3C8-9F77-4744-B635-03559FB738B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Adapter", "DesignPatterns.Adapter\DesignPatterns.Adapter.csproj", "{329BC3C8-9F77-4744-B635-03559FB738B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Bridge", "DesignPatterns.Bridge\DesignPatterns.Bridge.csproj", "{B7B55D8E-BF55-418D-AD2C-86730F435508}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Bridge", "DesignPatterns.Bridge\DesignPatterns.Bridge.csproj", "{B7B55D8E-BF55-418D-AD2C-86730F435508}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Decorator", "DesignPatterns.Decorator\DesignPatterns.Decorator.csproj", "{0810666A-FA95-452E-8CDB-F718D63CB45B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Decorator", "DesignPatterns.Decorator\DesignPatterns.Decorator.csproj", "{0810666A-FA95-452E-8CDB-F718D63CB45B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Estructurales", "Estructurales", "{270AD005-DFAE-4F5E-82F6-D467940B551A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creacionales", "Creacionales", "{FD52FA50-1043-438A-9AE4-30DB80E23C4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +52,14 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{36B6DED3-2748-4C2C-AC84-A491F32F3983} = {270AD005-DFAE-4F5E-82F6-D467940B551A}
+		{BAB78AD7-DB8D-402D-B0F1-FC8A27753256} = {FD52FA50-1043-438A-9AE4-30DB80E23C4B}
+		{16E7430A-1851-4AB5-8FAC-5B493C34D775} = {FD52FA50-1043-438A-9AE4-30DB80E23C4B}
+		{329BC3C8-9F77-4744-B635-03559FB738B2} = {270AD005-DFAE-4F5E-82F6-D467940B551A}
+		{B7B55D8E-BF55-418D-AD2C-86730F435508} = {270AD005-DFAE-4F5E-82F6-D467940B551A}
+		{0810666A-FA95-452E-8CDB-F718D63CB45B} = {270AD005-DFAE-4F5E-82F6-D467940B551A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C9ED9204-0834-450C-94F0-C5079B5FE6CB}

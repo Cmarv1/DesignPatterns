@@ -1,16 +1,19 @@
-﻿namespace DesignPatterns.Adapter
+﻿using DesignPatterns.Adapter.Adaptador_de_objetos;
+using DesignPatterns.Adapter.Clase_adaptadora;
+
+namespace DesignPatterns.Adapter
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Adaptee adaptee = new Adaptee();
-            ITarget target = new Adapter(adaptee);
+            //Adaptador de objetos
+            IReproductorMP3 reproductor = new AdaptadorWAV();
+            reproductor.ReproducirMP3("archivo.wav : Objetos");  // Aunque el archivo es WAV, se utiliza la interfaz MP3
 
-            Console.WriteLine("Adaptee interface is incompatible with the client.");
-            Console.WriteLine("But with adapter client can call it's method.");
-
-            Console.WriteLine(target.GetRequest());
+            //Clase adaptadora
+            IReproductorMP3 reproductorClase = new AdaptadorWAVClase();
+            reproductorClase.ReproducirMP3("archivo.wav : Clase");  // Se utiliza la interfaz MP3 con un adaptador de clase
         }
     }
 }

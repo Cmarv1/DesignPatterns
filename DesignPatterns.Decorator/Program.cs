@@ -4,18 +4,15 @@
     {
         static void Main(string[] args)
         {
-            Client client = new Client();
+            IBebida miCafeCompleto = new Cafe();
+            miCafeCompleto = new Leche(miCafeCompleto);
+            miCafeCompleto = new Azucar(miCafeCompleto);
 
-            var simple = new ConcreteComponent();
-            Console.WriteLine("Client: I get a simple component:");
-            client.ClientCode(simple);
-            Console.WriteLine();
+            IBebida miCafeConLeche = new Cafe();
+            miCafeConLeche = new Leche(miCafeConLeche);
 
-            
-            ConcreteDecoratorA decorator1 = new ConcreteDecoratorA(simple);
-            ConcreteDecoratorB decorator2 = new ConcreteDecoratorB(decorator1);
-            Console.WriteLine("Client: Now I've got a decorated component:");
-            client.ClientCode(decorator2);
+            Console.WriteLine(miCafeCompleto.Descripcion() + "\nCosto: $" + miCafeCompleto.Costo() + "\n---------------\n");
+            Console.WriteLine(miCafeConLeche.Descripcion() + "\nCosto: $" + miCafeConLeche.Costo() + "\n---------------\n");
         }
     }
 }
