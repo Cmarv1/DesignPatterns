@@ -2,11 +2,11 @@
 {
     public abstract class Forma
     {
-        protected IColor _color;
+        protected IColor color;
 
         protected Forma(IColor color)
         {
-            _color = color;
+            this.color = color;
         }
 
         public abstract void Dibujar();
