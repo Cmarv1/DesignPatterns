@@ -16,7 +16,5 @@ class Program
         documento2.Publicar();
         documento2.Publicar();
         documento2.Publicar();
-
-
     }
 }
