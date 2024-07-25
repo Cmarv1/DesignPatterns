@@ -4,9 +4,10 @@
     {
         private ReproductorWAV _reproductorWAV = new ReproductorWAV();
 
-        public void ReproducirMP3(string archivo)
+        public void ReproducirMP3(int archivo)
         {
-            _reproductorWAV.ReproducirWAV(archivo);
+            string newArchivo = $"{archivo}.wav";
+            _reproductorWAV.ReproducirWAV(newArchivo);
         }
     }
 }

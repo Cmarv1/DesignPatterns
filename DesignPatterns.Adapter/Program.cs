@@ -9,11 +9,11 @@ namespace DesignPatterns.Adapter
         {
             //Adaptador de objetos
             IReproductorMP3 reproductor = new AdaptadorWAV();
-            reproductor.ReproducirMP3("archivo.wav : Objetos");  // Aunque el archivo es WAV, se utiliza la interfaz MP3
+            reproductor.ReproducirMP3(1234);  // Aunque el archivo es WAV, se utiliza la interfaz MP3
 
             //Clase adaptadora
             IReproductorMP3 reproductorClase = new AdaptadorWAVClase();
-            reproductorClase.ReproducirMP3("archivo.wav : Clase");  // Se utiliza la interfaz MP3 con un adaptador de clase
+            reproductorClase.ReproducirMP3(5678);  // Se utiliza la interfaz MP3 con un adaptador de clase
         }
     }
 }

@@ -6,8 +6,8 @@ class Program
     {
         ClimaDatos climaDatos = new ClimaDatos();
 
-        PantallaActual pantallaActual = new PantallaActual(climaDatos);
-        PantallaEstadisticas pantallaEstadisticas = new PantallaEstadisticas(climaDatos);
+        IObservador pantallaActual = new PantallaActual(climaDatos);
+        IObservador pantallaEstadisticas = new PantallaEstadisticas(climaDatos);
 
         climaDatos.EstablecerMediciones(28, 65, 1013.1f);
         climaDatos.EstablecerMediciones(22, 70, 1012.5f);

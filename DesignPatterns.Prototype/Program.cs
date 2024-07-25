@@ -18,7 +18,7 @@ class Program
         IPrototipoDocumento clonHojaCalculo = gestor.ObtenerPrototipo("HojaCalculo");
 
         //Modificar contenido del clon
-        (clonDocTexto as DocumentoTexto).Contenido = "Contenido modificado del documento de texto";
+        (clonDocTexto as HojaCalculo).Datos = "Contenido modificado del documento de texto";
         (clonHojaCalculo as HojaCalculo).Datos = "Datos modificados de la hoja de cálculo";
 
         //Motrar la informacion de los Originales y los Clones

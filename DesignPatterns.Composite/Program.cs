@@ -15,7 +15,13 @@
             graficoCompuesto.Agregar(grafico);
             graficoCompuesto.Agregar(new Forma("Triángulo"));
 
-            graficoCompuesto.Dibujar();  // Dibuja el círculo, el cuadrado y el triángulo
+            CompositeGrafico graficoMasCompuesto = new CompositeGrafico();
+            graficoMasCompuesto.Agregar(graficoCompuesto);
+            graficoMasCompuesto.Agregar(new Forma("Rectangulo"));
+
+            //grafico.Dibujar();  // Dibuja el círculo y el cuadrado
+            //graficoCompuesto.Dibujar();  // Dibuja el círculo, el cuadrado y el triángulo
+            graficoMasCompuesto.Dibujar();  // Dibuja el círculo, el cuadrado, el triángulo y el cuadrado
         }
     }
 }

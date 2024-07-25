@@ -5,7 +5,7 @@
     {
         public void ReproducirWAV(string archivo)
         {
-            Console.WriteLine($"Reproduciendo archivo WAV: {archivo}");
+            Console.WriteLine($"Reproduciendo archivo WAV: {archivo}.wav");
         }
     }
 }

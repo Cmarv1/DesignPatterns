@@ -4,9 +4,10 @@ namespace DesignPatterns.Adapter.Clase_adaptadora
 {
     public class AdaptadorWAVClase : ReproductorWAV, IReproductorMP3
     {
-        public void ReproducirMP3(string archivo)
+        public void ReproducirMP3(int archivo)
         {
-            ReproducirWAV(archivo);
+            string newArchivo = archivo.ToString();
+            ReproducirWAV(newArchivo);
         }
     }
 }

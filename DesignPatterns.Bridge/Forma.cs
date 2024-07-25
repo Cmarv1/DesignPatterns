@@ -10,5 +10,9 @@
         }
 
         public abstract void Dibujar();
+        public void CambiarColor(IColor color)
+        {
+            this.color = color;
+        }
     }
 }

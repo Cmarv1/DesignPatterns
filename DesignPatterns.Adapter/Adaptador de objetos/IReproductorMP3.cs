@@ -3,6 +3,6 @@
     //Interfaz que espera usar el cliente
     public interface IReproductorMP3
     {
-        void ReproducirMP3(string archivo);
+        void ReproducirMP3(int archivo);
     }
 }
